@@ -4,22 +4,17 @@ import {
   Database,
   TrendingUp,
   MessageSquare,
-  Briefcase,
-  Puzzle,
+  Wallet,
   Settings,
-  BarChart3,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "Resumo", path: "/" },
-  { icon: Database, label: "Dados", path: "/dados" },
+  { icon: Wallet, label: "Gastos", path: "/dados" },
   { icon: TrendingUp, label: "Movimientos", path: "/movimientos" },
   { icon: MessageSquare, label: "Mensagens", path: "/mensagens" },
-  { icon: Briefcase, label: "Casos", path: "/casos" },
-  { icon: Puzzle, label: "Extensões", path: "/extensoes" },
   { icon: Settings, label: "Configurações", path: "/configuracoes" },
-  { icon: BarChart3, label: "Médio", path: "/medio" },
 ];
 
 const Sidebar = () => {
