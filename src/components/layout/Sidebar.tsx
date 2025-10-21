@@ -11,10 +11,10 @@ import { cn } from "@/lib/utils";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "Resumo", path: "/" },
-  { icon: Wallet, label: "Gastos", path: "/dados" },
+  { icon: Wallet, label: "Meus Gastos", path: "/gastos" },
   { icon: TrendingUp, label: "Movimientos", path: "/movimientos" },
   { icon: MessageSquare, label: "Mensagens", path: "/mensagens" },
-  { icon: Settings, label: "Configurações", path: "/configuracoes" },
+  { icon: Settings, label: "Configurações", path: "/config" },
 ];
 
 const Sidebar = () => {

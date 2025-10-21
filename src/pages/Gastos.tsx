@@ -1,11 +1,10 @@
 import Header from "@/components/layout/Header";
 import Sidebar from "@/components/layout/Sidebar";
 import Footer from "@/components/layout/Footer";
-import ResumeHeader from "@/components/dashboard/ResumeHeader";
-import DashboardFilters from "@/components/dashboard/DashboardFilters";
-import ChartsSection from "@/components/dashboard/ResumeSection";
+import GastosHeader from "@/components/dashboard/GastosHeader";
+import CardsGastos from "@/components/dashboard/GastosSection";
 
-const Index = () => {
+const Gastos = () => {
   return (
     <div className="flex min-h-screen flex-col w-full">
       <Header />
@@ -14,8 +13,8 @@ const Index = () => {
         <Sidebar />
         
         <main className="flex-1 p-6 space-y-6 overflow-auto">
-          <ResumeHeader />
-          <ChartsSection />
+          <GastosHeader />
+          <CardsGastos />
         </main>
       </div>
       
@@ -24,4 +23,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Gastos;
