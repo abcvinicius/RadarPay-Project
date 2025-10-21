@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { ResponsiveContainer } from "recharts";
-import { Calendar, DollarSign, TrendingUp, TriangleAlert } from "lucide-react";
+import { Calendar, Clock, DollarSign, TrendingUp, TriangleAlert } from "lucide-react";
 
 const ChartsSection = () => {
   return (
@@ -42,14 +42,14 @@ const ChartsSection = () => {
             </ResponsiveContainer>
 
         <div className="mt-6 flex items-center gap-2 text-red-700 bg-red-50 border border-red-200 rounded-lg p-3 text-sm font-medium">
-            <span>⚠️ Atenção: Você está comprometendo <strong>53.1%</strong> da sua renda com gastos fixos!</span>
+            <span><strong>⚠️ Atenção:</strong> Você está comprometendo <strong>53.1%</strong> da sua renda com gastos fixos!</span>
         </div>
     </Card>
     
     <Card className="p-6 lg:col-span-2">
     <div className="flex items-center gap-2 mb-3">
-        <TriangleAlert className="w-6 h-6 text-red-600" />
-        <h1 className="text-2xl font-bold text-foreground mb-1">Comprometimento Mensal </h1>
+        <Clock className="w-6 h-6 text-purple-600" />
+        <h1 className="text-2xl font-bold text-foreground mb-1">Próximas Cobranças </h1>
     </div>
     <h3 className="text-sm font-semibold mb-4">Seus gastos fixos e recorrentes</h3>
         <ResponsiveContainer width="100%" height={475}>
@@ -129,9 +129,12 @@ const ChartsSection = () => {
                         <p className="text-xs text-gray-400">Pendente</p>
                     </div>
                 </Card>
-
             </div>
         </ResponsiveContainer>
+
+    <div className="mt-6 flex items-center gap-2 text-yellow-500 bg-yellow-50 border border-yellow-300 rounded-lg p-3 text-sm font-medium">
+            <span> <strong>💡 Dica:</strong> Configure alertas para receber notificações antes das cobranças! </span>
+    </div>
 
     </Card>
     </section>
