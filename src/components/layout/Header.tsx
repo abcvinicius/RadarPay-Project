@@ -1,5 +1,4 @@
-
-
+import { useNavigate } from 'react-router-dom';
 import LogoHeaderRadar from '@/assets/RadarPay.png';
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,6 +9,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 const Header = () => {
+      const navigate = useNavigate();
+
   return (
     <header className="h-16 border-b border-border bg-card flex items-center justify-between px-6">
       <div className="flex items-center gap-2">
@@ -25,7 +26,7 @@ const Header = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuItem>Perfil</DropdownMenuItem>
-          <DropdownMenuItem>Configurações</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => navigate("/config")}>Configurações</DropdownMenuItem>
           <DropdownMenuItem>Sair</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

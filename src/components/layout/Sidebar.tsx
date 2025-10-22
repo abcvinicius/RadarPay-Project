@@ -32,8 +32,8 @@ const Sidebar = () => {
                     cn(
                       "flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-medium transition-colors",
                       isActive
-                        ? "bg-sidebar-accent text-sidebar-accent-foreground"
-                        : "text-sidebar-foreground hover:bg-sidebar-accent/50"
+                        ? "bg-red-700 text-white"
+                        :"text-sidebar-foreground border border-transparent hover:border-red-200 hover:bg-red-50"
                     )
                   }
                 >

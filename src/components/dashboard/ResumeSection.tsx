@@ -7,7 +7,7 @@ const ChartsSection = () => {
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
     
     <Card className="p-6 lg:col-span-2 mb-4">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-2 mb-3 ">
             <TriangleAlert className="w-6 h-6 text-red-600" />
             <h1 className="text-2xl font-bold text-foreground mb-1">Comprometimento Mensal </h1>
         </div>
